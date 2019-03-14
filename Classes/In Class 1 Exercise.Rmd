@@ -1,0 +1,133 @@
+---
+title: "Class 1 Exercises"
+output: html_notebook
+---
+##My first exercise
+
+```{r}
+classFirstVar <- "Shangri La"
+
+classFirstVar
+```
+
+
+##Notes
+
+Data Structures
+Vector
+1
+2
+3
+4
+5
+6
+7
+10
+132
+
+Pet Name
+c is short for combine, it takes what's in the parentheses and combines them into a vector.
+
+```{r}
+petNames <- c("Tommy", "Singha", "Chacko")
+petAge <- c(4, 5, 14)
+male <- c(TRUE, FALSE, FALSE)
+```
+
+```{r}
+typeof(petNames)
+typeof(petAge)
+typeof(male)
+```
+
+```{r}
+
+```
+
+
+4. What happens when you combine different data types? 
+Coercion hierarchy: logical, integer, double, character
+anytime R encounters multiples kinds of ___ it will convert it to the lowest possible thing, which is character
+Bullion
+```{r}
+c("Hi", 1, "one")
+```
+
+```{r}
+c(1.0, 3.4, 5L)
+```
+
+```{r}
+c(T, F, "TRUE")
+```
+
+```{r}
+c(T, F, 1)
+```
+
+###Lists
+1. Create a list
+
+```{r}
+testList <- (hiPets)
+```
+
+2. Create a named list and access its names using 
+
+###Data Frame
+
+
+
+1. Create and store a character vector (of your choice), a numeric vector (integer/double) and a factor, all of the same length
+```{r}
+plantNames <- c("orchid", "calla lily", "fern")
+plantAbundance <- c(50, 60, 85)
+```
+
+
+
+2. Use `seq()` to generate an atomic vector containing all the odd numbers less than 100
+```{r}
+##Create a sequence of odd numbers from 1 to 99
+seq(from = 1, to = 100, by = 2)
+```
+
+
+3. Store all the vectors created in step 1 in a named list
+```{r}
+plantList <- list(plantNames, plantAbundance)
+
+plantList
+```
+
+
+4. Create a dataframe using all the vectors stored in step 1
+```{r}
+taskDF <- data.frame(plantNames, plantAbundance)
+
+taskDF
+```
+
+
+5. Predict the output of the following without running the code in `c("FALSE", FALSE)`, `c(1.0, FALSE)`, `c(2, TRUE)` and `c("two", 2)`
+  `c("FALSE", FALSE)` = "Character"
+  `c(1.0, FALSE)` = "Numeric (Integer/Double)"
+  `c(2, TRUE)` = "Numeric"
+  `c("two", 2)` = "Character"
+
+```{r}
+c("FALSE", FALSE)
+c(1.0, FALSE)
+c(2, TRUE)
+c("two", 2)
+```
+
+
+6. What gets returned when you check the `typeof()` the dataframe created in step 4. Why?
+
+```{r}
+installed.packages()
+```
+
+
+
